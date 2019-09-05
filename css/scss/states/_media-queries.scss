@@ -1,0 +1,43 @@
+@import "../utilities/_variables";
+
+@media screen and (max-width: 1024px){
+    
+    .container {
+        width: 700px;
+        height: 400px;
+
+        > .img-container {
+            height: 400px;
+
+            > img {
+                height: 400px;
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 800px){
+    
+    .container {
+        width: 600px;
+        height: 300px;
+
+        > .img-container {
+            height: 300px;
+
+            > img {
+                height: 300px;
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 700px){
+
+    .container {
+        width: 85%;
+    }
+
+}

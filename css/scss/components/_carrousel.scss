@@ -1,0 +1,56 @@
+@import "../utilities/_variables";
+
+.title-carrousel {
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bold;
+    margin: 20px 0;
+    color: $white-color;
+}
+
+.container {
+    position: relative;
+    width: 900px;
+    height: 500px;
+    background-color: #202020;
+    margin: 0 auto;
+    overflow: hidden;
+    transition: width 0.5s;
+
+    > .img-container {
+        display: flex;
+        width: auto;
+        height: 500px;
+        transition: transform 1.5s ease-in-out;
+
+        > img {
+            width: 100%;
+            height: 500px;
+        }
+    }
+
+    > .btn-left,
+      .btn-right {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 40px;
+        height: 50px;
+        margin: auto 0;
+        color: $white-color;
+        font-size: 1.5rem;
+        border: none;
+        background-color: transparent;
+        color: rgba(250, 250, 250, 0.6);
+        cursor: pointer;
+        transition: color 0.3s;
+
+        &:hover {
+            color: $white-color;
+        }
+    }
+
+    > .btn-right {
+        right: 0;
+    }
+}
