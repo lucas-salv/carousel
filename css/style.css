@@ -87,6 +87,26 @@ table {
       color: #fff; }
   .container > .btn-right {
     right: 0; }
+  .container .img-list {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    margin-left: -50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100px; }
+    .container .img-list > .listItem {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: rgba(250, 250, 250, 0.6);
+      cursor: pointer;
+      transition: background-color 0.3s; }
+      .container .img-list > .listItem:hover {
+        background-color: rgba(250, 250, 250, 0.85); }
+      .container .img-list > .listItem.act {
+        background-color: #fff; }
 
 @media screen and (max-width: 1024px) {
   .container {
