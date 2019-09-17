@@ -6,7 +6,7 @@
     let $imgContainer = document.querySelector(".img-container");
     let $btnLeft = document.querySelector(".btn-left");
     let $btnRight = document.querySelector(".btn-right");
-    let $imgList = document.querySelector('.img-list');
+    let $imgList = document.querySelector(".img-list");
 
     // Others variables
     let cont = 0;
@@ -54,7 +54,6 @@
             if(cont < percentTransform * $imgContainer.children.length){
                 cont += percentTransform;
                 $imgContainer.style.transform = `translateX(-${cont}%)`;
-                console.log(cont);
                 clearTimeout(interval);
                 imgInterval();
             }
